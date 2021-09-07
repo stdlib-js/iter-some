@@ -131,6 +131,24 @@ console.log( bool );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/iter/any`][@stdlib/iter/any]: test whether at least one iterated value is truthy.
+-   [`@stdlib/iter/every`][@stdlib/iter/every]: test whether all iterated values are truthy.
+-   [`@stdlib/iter/for-each`][@stdlib/iter/for-each]: create an iterator which invokes a function for each iterated value before returning the iterated value.
+-   [`@stdlib/iter/none`][@stdlib/iter/none]: test whether all iterated values are falsy.
+-   [`@stdlib/iter/some-by`][@stdlib/iter/some-by]: test whether at least `n` iterated values pass a test implemented by a predicate function.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -189,6 +207,20 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/iter-some/main/LICENSE
 
 [mdn-iterator-protocol]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol
+
+<!-- <related-links> -->
+
+[@stdlib/iter/any]: https://github.com/stdlib-js/iter-any
+
+[@stdlib/iter/every]: https://github.com/stdlib-js/iter-every
+
+[@stdlib/iter/for-each]: https://github.com/stdlib-js/iter-for-each
+
+[@stdlib/iter/none]: https://github.com/stdlib-js/iter-none
+
+[@stdlib/iter/some-by]: https://github.com/stdlib-js/iter-some-by
+
+<!-- </related-links> -->
 
 </section>
 
