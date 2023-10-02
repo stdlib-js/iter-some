@@ -45,19 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-some
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-some/tags). For example,
-
-```javascript
-import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@v0.1.0-deno/mod.js';
+var iterSome = require( '@stdlib/iter-some' );
 ```
 
 #### iterSome( iterator, n )
@@ -65,7 +76,7 @@ import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@v0.1.0-den
 Tests whether at least `n` [iterated][mdn-iterator-protocol] values are truthy.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 0, 0, 1, 1, 1 ] );
 
@@ -76,7 +87,7 @@ var bool = iterSome( arr, 3 );
 If a provided [`iterator`][mdn-iterator-protocol] does not return any iterated values, the function returns `false`.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var bool = iterSome( array2iterator( [] ), 1 );
 // returns false
@@ -103,9 +114,9 @@ var bool = iterSome( array2iterator( [] ), 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
-import iterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@deno/mod.js';
-import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@deno/mod.js';
+var randu = require( '@stdlib/random-iter-randu' );
+var iterMap = require( '@stdlib/iter-map' );
+var iterSome = require( '@stdlib/iter-some' );
 
 function threshold( r ) {
     return ( r > 0.95 );
@@ -166,7 +177,7 @@ console.log( bool );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -196,8 +207,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/iter-some.svg
 [npm-url]: https://npmjs.org/package/@stdlib/iter-some
 
-[test-image]: https://github.com/stdlib-js/iter-some/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/iter-some/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/iter-some/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/iter-some/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-some/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-some?branch=main
@@ -230,15 +241,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/any]: https://github.com/stdlib-js/iter-any/tree/deno
+[@stdlib/iter/any]: https://github.com/stdlib-js/iter-any
 
-[@stdlib/iter/every]: https://github.com/stdlib-js/iter-every/tree/deno
+[@stdlib/iter/every]: https://github.com/stdlib-js/iter-every
 
-[@stdlib/iter/for-each]: https://github.com/stdlib-js/iter-for-each/tree/deno
+[@stdlib/iter/for-each]: https://github.com/stdlib-js/iter-for-each
 
-[@stdlib/iter/none]: https://github.com/stdlib-js/iter-none/tree/deno
+[@stdlib/iter/none]: https://github.com/stdlib-js/iter-none
 
-[@stdlib/iter/some-by]: https://github.com/stdlib-js/iter-some-by/tree/deno
+[@stdlib/iter/some-by]: https://github.com/stdlib-js/iter-some-by
 
 <!-- </related-links> -->
 
