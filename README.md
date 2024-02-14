@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-some/tags). For example,
+
+```javascript
 import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@v0.2.0-esm/index.mjs';
 ```
 
@@ -105,7 +110,7 @@ var bool = iterSome( array2iterator( [] ), 1 );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
 import iterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@esm/index.mjs';
-import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@v0.2.0-esm/index.mjs';
+import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@esm/index.mjs';
 
 function threshold( r ) {
     return ( r > 0.95 );
