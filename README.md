@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-some/tags). For example,
+
+```javascript
 import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@v0.2.3-deno/mod.js';
 ```
 
@@ -100,7 +105,7 @@ var bool = iterSome( array2iterator( [] ), 1 );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
 import iterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@deno/mod.js';
-import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@v0.2.3-deno/mod.js';
+import iterSome from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-some@deno/mod.js';
 
 function threshold( r ) {
     return ( r > 0.95 );
